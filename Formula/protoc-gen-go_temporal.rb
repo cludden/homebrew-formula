@@ -5,21 +5,21 @@
 class ProtocGenGoTemporal < Formula
   desc "protoc-gen-go_temporal - a protoc plugin for generating Temporal clients, workers, and clis in go from protobuf schemas"
   homepage "https://github.com/cludden/protoc-gen-go-temporal"
-  version "1.17.5"
+  version "1.17.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cludden/protoc-gen-go-temporal/releases/download/v1.17.5/protoc-gen-go_temporal_1.17.5_darwin_amd64.tar.gz"
-      sha256 "da8c953ed70676143217e351166f81633c58ee3f2d38c615d66f934f844ec411"
+      url "https://github.com/cludden/protoc-gen-go-temporal/releases/download/v1.17.6/protoc-gen-go_temporal_1.17.6_darwin_amd64.tar.gz"
+      sha256 "4624f5a38500b35caa27dbbef4bd886b07435108149b97c2fb003dac64d6db2a"
 
       def install
         bin.install "protoc-gen-go_temporal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cludden/protoc-gen-go-temporal/releases/download/v1.17.5/protoc-gen-go_temporal_1.17.5_darwin_arm64.tar.gz"
-      sha256 "042ac9e76fcc7fa5c7ed033fda64d3a48537a5d61a5359c2a698e9388a6392ed"
+      url "https://github.com/cludden/protoc-gen-go-temporal/releases/download/v1.17.6/protoc-gen-go_temporal_1.17.6_darwin_arm64.tar.gz"
+      sha256 "ec21878d67c91840d3543cac1da4cc74ee02e71bf5243fc97cdecb1881f3a2b2"
 
       def install
         bin.install "protoc-gen-go_temporal"
@@ -29,15 +29,15 @@ class ProtocGenGoTemporal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cludden/protoc-gen-go-temporal/releases/download/v1.17.5/protoc-gen-go_temporal_1.17.5_linux_amd64.tar.gz"
-      sha256 "ccd736d3f2b486e46b0274c0f1c9f0c4a59deb66d6db26f281c63edc39de2922"
+      url "https://github.com/cludden/protoc-gen-go-temporal/releases/download/v1.17.6/protoc-gen-go_temporal_1.17.6_linux_amd64.tar.gz"
+      sha256 "2c14e7260d52c22009539436e3e0ed1f45bbc1b72838c4bcd50c3f55dc3eb29f"
       def install
         bin.install "protoc-gen-go_temporal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cludden/protoc-gen-go-temporal/releases/download/v1.17.5/protoc-gen-go_temporal_1.17.5_linux_arm64.tar.gz"
-      sha256 "4bb4247c36cc7f61ee79c7d5343a24d84c59ddcb92c48e8b4dc0c72e0c323c24"
+      url "https://github.com/cludden/protoc-gen-go-temporal/releases/download/v1.17.6/protoc-gen-go_temporal_1.17.6_linux_arm64.tar.gz"
+      sha256 "3cf806d75dce397db61dd72ff95a049b5bdfb96f0ceddd9d7ff4422354ef598a"
       def install
         bin.install "protoc-gen-go_temporal"
       end
